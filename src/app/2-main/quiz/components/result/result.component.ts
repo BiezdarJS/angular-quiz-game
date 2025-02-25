@@ -1,4 +1,4 @@
-import { Component, computed, Signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, Signal } from '@angular/core';
 import { QuizStoreService } from '../../services/quiz-store.service';
 import { QuizFormService } from '../../services/quiz-form.service';
 import { ScoreAmountEnum } from '../../enums/score-amount.enum';
@@ -9,7 +9,8 @@ import { TranslocoModule } from '@ngneat/transloco';
   selector: 'app-result',
   imports: [TranslocoModule],
   templateUrl: './result.component.html',
-  styleUrl: './result.component.scss'
+  styleUrl: './result.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ResultComponent {
 

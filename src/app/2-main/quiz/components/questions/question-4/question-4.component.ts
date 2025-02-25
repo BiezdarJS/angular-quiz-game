@@ -1,4 +1,4 @@
-import { Component, computed, Input, signal, Signal, WritableSignal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, Input, signal, Signal, WritableSignal } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { IQuestion } from '../../../interfaces/step.interface';
 import { CurrentQuestionEnum } from '../../../enums/current-step.enum';
@@ -12,7 +12,8 @@ import { QUESTION_4_DATA } from '../../../data/question-4';
   selector: 'app-question-4',
   imports: [NgClass, TranslocoModule],
   templateUrl: './question-4.component.html',
-  styleUrl: './question-4.component.scss'
+  styleUrl: './question-4.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class Question4Component {
   @Input() quizForm!: FormGroup;
