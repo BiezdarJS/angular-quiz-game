@@ -7,7 +7,7 @@ OS: win32 x64<br />
 
 **Demo**: https://quiz.piotrdeja.pl/
 
-**Goal Tracker** to prosty projekt z quizem <br />
+**QuizGame** to prosty projekt z quizem <br />
 Działanie aplikacji:<br />
 Po kliknięciu 'zacznij quiz' wybieramy pytania, a następnie otrzymujemy wynik końcowy
 
