@@ -1,0 +1,28 @@
+<section class="quiz-container">
+
+  <app-progres-bar />
+
+  @if(questionsViewActive()) {
+    <form [formGroup]="quizForm" (ngSubmit)="onSubmit()">
+    @switch(currentQuestion()) {
+      @case (CurrentQuestionEnum.FIRST) {
+        <app-question-1 [quizForm]="quizForm" />
+      }
+      @case (CurrentQuestionEnum.SECOND) {
+        <app-question-2 [quizForm]="quizForm" />
+      }
+      @case (CurrentQuestionEnum.THIRD) {
+        <app-question-3 [quizForm]="quizForm" />
+      }
+      @case (CurrentQuestionEnum.FOURTH) {
+        <app-question-4 [quizForm]="quizForm" />
+      }
+    }
+    </form>
+  }
+
+  @if(resultViewActive()) {
+    <app-result />
+  }
+
+</section>

@@ -1,0 +1,42 @@
+
+
+.result {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.result h2 {
+  color: #FFB5B5;
+  margin-bottom: 15px;
+}
+
+.result p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.answers-summary {
+  &__score {
+    text-align: center;
+    span {
+      font-size: 2rem;
+    }
+  }
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3sease;
+}
+
+.restart-btn {
+  background-color: #667eea;
+  color: white;
+  width: 100%;
+}
+
+

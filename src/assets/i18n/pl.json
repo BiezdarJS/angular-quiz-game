@@ -1,0 +1,60 @@
+{
+  "main_menu": {
+    "start_view": "Ekran Startowy",
+    "quiz": "Quiz"
+  },
+  "quiz_misc": {
+    "next": "Następne",
+    "previous": "Poprzednie",
+    "submit": "Zatwierdź odpowiedzi"
+  },
+  "questions": {
+    "q1": {
+      "title": "Który reżyser jest znany ze swojego unikalnego stylu narracji nielinearnej?",
+      "answers": {
+        "a": "Christopher Nolan",
+        "b": "Quentin Tarantino",
+        "c": "Martin Scorsese",
+        "d": "Steven Spielberg"
+      }
+    },
+    "q2": {
+      "title": "W którym filmie po raz pierwszy pojawił się słynny cytat 'May the Force be with you'?",
+      "answers": {
+        "a": "Gwiezdne wojny: Nowa nadzieja",
+        "b": "Imperium kontratakuje",
+        "c": "Powrót Jedi",
+        "d": "Łotr 1: Gwiezdne wojny – historie"
+      }
+    },
+    "q3": {
+      "title": "Który aktor wcielił się w postać Jokera w filmie 'Mroczny Rycerz'?",
+      "answers": {
+        "a": "Joaquin Phoenix",
+        "b": "Jack Nicholson",
+        "c": "Heath Ledger",
+        "d": "Jared Leto"
+      }
+    },
+    "q4": {
+      "title": "Który film zdobył rekordową liczbę Oscarów, bo aż 11?",
+      "answers": {
+        "a": "Titanic",
+        "b": "Władca Pierścieni: Powrót króla",
+        "c": "Ben-Hur",
+        "d": "Wszystkie powyższe"
+      }
+    }
+  },
+  "result_page": {
+    "title": "Quiz Ukończony!",
+    "thank_you": "Dziękujemy za udział w naszym quizie.",
+    "correct_number": "Liczba poprawnych odpowiedzi:",
+    "verdict": {
+      "low": "Niski wynik czyli mieszczący się w granicach do 50%",
+      "medium": "Średni wynik czyli mieszczący się w granicach 51-80%",
+      "high": "Wysoki wynik czyli mieszczący się w granicach 81-100%"
+    },
+    "button_text": "Sprawdź odpowiedzi"
+  }
+}

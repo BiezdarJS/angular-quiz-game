@@ -1,0 +1,26 @@
+<div class="question">
+  <h2>{{ 'questions.q2.title' | transloco }}</h2>
+  <div class="options">
+    @for(question of question2Data; let idx = $index; track question) {
+      <label
+        class="option"
+        [ngClass]="{
+          'selected': idx === selectedIndex(),
+          'correct': isCompleted() && question.isCorrect,
+          'incorrect': quizForm.get('question2')?.value === question.value && !question.isCorrect && idx === selectedIndex() && isCompleted()
+          }"
+        (click)="handleOptionChange(idx, question.value)">
+        <input type="radio" formControlName="question2" [value]="question.value">
+        {{ 'questions.q2.answers.' + ANSWER_KEYS[idx] | transloco }}
+    </label>
+    }
+  </div>
+  <div class="buttons">
+      <button type="button" class="prev-btn" (click)="handlePreviousBtnAction()">
+        {{ 'quiz_misc.previous' | transloco }}
+      </button>
+      <button type="button" class="next-btn" [disabled]="isDisabled()" (click)="handleNextBtnAction()">
+        {{ 'quiz_misc.next' | transloco }}
+      </button>
+  </div>
+</div>

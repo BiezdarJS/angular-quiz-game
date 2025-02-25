@@ -1,0 +1,29 @@
+<div class="result">
+  <h2>{{ 'result_page.title' | transloco }} </h2>
+  <p>{{ 'result_page.thank_you' | transloco }}</p>
+  <div id="answers-summary">
+    <p class="answers-summary__score">{{ 'result_page.correct_number' | transloco }}: <br>
+      <span>{{ score + '/' + numberOfQuestions }} </span>
+    </p>
+    @switch(scoreAmount()) {
+      @case (ScoreAmountEnum.LOW) {
+        <p>
+          {{ 'result_page.verdict.low' | transloco }}
+        </p>
+      }
+      @case (ScoreAmountEnum.MEDIUM) {
+        <p>
+          {{ 'result_page.verdict.medium' | transloco }}
+        </p>
+      }
+      @case (ScoreAmountEnum.HIGH) {
+        <p>
+          {{ 'result_page.verdict.high' | transloco }}
+        </p>
+      }
+    }
+  </div>
+  <button class="restart-btn" (click)="checkAnswers()">
+    {{ 'result_page.button_text' | transloco }}
+  </button>
+</div>

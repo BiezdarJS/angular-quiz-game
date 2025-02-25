@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+@use "sass:map";
+@use "sass:list";
+@use "sass:string";
+@use "sass:math";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 50px auto;
+  box-shadow: 0 0 10px #ddd;
+  padding: 50px;
+  width: min(90%, 1200px);
+}
+
+
+
+// =============================================================================
+// Font Face
+// =============================================================================
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: woff2 woff) {
+  $src: null;
+
+  $extmods: (
+      eot: "?",
+      svg: "#" + str-replace($name, " ", "_")
+  );
+
+  $formats: (
+      otf: "opentype",
+      ttf: "truetype"
+  );
+
+  @each $ext in $exts {
+      $extmod: if(map.has-key($extmods, $ext), $ext + map.get($extmods, $ext), $ext);
+      $format: if(map.has-key($formats, $ext), map.get($formats, $ext), $ext);
+      $src: list.append($src, url(string.quote($path + "." + $extmod)) format(string.quote($format)), $separator: comma);
+  }
+
+  @font-face {
+      font-family: string.quote($name);
+      font-style: $style;
+      font-weight: $weight;
+      src: $src;
+  }
+}
+
+@include font-face('Avengers', './assets/fonts/avengers',normal, normal);

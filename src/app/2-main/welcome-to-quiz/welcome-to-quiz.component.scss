@@ -1,0 +1,74 @@
+
+.heading {
+  font-family: Orbitron ,sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #000;
+  paint-order: stroke fill;
+  letter-spacing: 4px;
+  margin: 0
+
+}
+
+.heading--yellow {
+  color: #333
+}
+
+.heading--hero {
+  font-family: Avengers,sans-serif;
+  word-spacing: 22px;
+  line-height: 124px;
+  font-weight: 900;
+  font-size: 9rem;
+  margin: 0 0 25px;
+  -webkit-text-stroke: 2px #555;
+  color: #fff;
+  paint-order: stroke fill;
+}
+
+@media (max-width: 991px) {
+  .heading--hero {
+      font-size:3rem;
+      line-height: 6rem
+  }
+}
+
+@media (max-width: 1200px) {
+  .heading--hero {
+      font-size:4rem;
+      line-height: 7rem
+  }
+}
+
+@media (min-width: 1201px) {
+  .heading--hero {
+      font-size:4rem
+  }
+}
+
+@media (min-width: 1550px) {
+  .heading--hero {
+    font-size: 5rem;
+    line-height: 8rem;
+  }
+}
+
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0 auto;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.next-btn {
+  background-color: #FFB5B5;
+  color: white;
+}

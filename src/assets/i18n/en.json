@@ -1,0 +1,60 @@
+{
+  "main_menu": {
+    "start_view": "Start View",
+    "quiz": "Quiz"
+  },
+  "quiz_misc": {
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit"
+  },
+  "questions": {
+    "q1": {
+      "title": "Which director is known for his unique nonlinear storytelling style?",
+      "answers": {
+        "a": "Christopher Nolan",
+        "b": "Quentin Tarantino",
+        "c": "Martin Scorsese",
+        "d": "Steven Spielberg"
+      }
+    },
+    "q2": {
+      "title": "In which movie did the famous quote 'May the Force be with you' first appear?",
+      "answers": {
+        "a": "Star Wars: A New Hope",
+        "b": "The Empire Strikes Back",
+        "c": "Return of the Jedi",
+        "d": "Rogue One: A Star Wars Story"
+      }
+    },
+    "q3": {
+      "title": "Which actor played the role of the Joker in 'The Dark Knight'?",
+      "answers": {
+        "a": "Joaquin Phoenix",
+        "b": "Jack Nicholson",
+        "c": "Heath Ledger",
+        "d": "Jared Leto"
+      }
+    },
+    "q4": {
+      "title": "Which movie won a record-breaking 11 Academy Awards?",
+      "answers": {
+        "a": "Titanic",
+        "b": "The Lord of the Rings: The Return of the King",
+        "c": "Ben-Hur",
+        "d": "All of the above"
+      }
+    }
+  },
+  "result_page": {
+    "title": "Quiz Completed!",
+    "thank_you": "Thank you for participating in our quiz.",
+    "correct_number": "Number of correct answers:",
+    "verdict": {
+      "low": "Low score, which falls within the range of up to 50%",
+      "medium": "Medium score, which falls within the range of 51-80%",
+      "high": "High score, which falls within the range of 81-100%"
+    },
+    "button_text": "Check answers"
+  }
+}
