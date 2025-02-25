@@ -1,4 +1,8 @@
 {
+  "welcome": {
+    "heading": "Witaj <br>w quizie filmowym",
+    "start": "Zacznij Quiz"
+  },
   "main_menu": {
     "start_view": "Ekran Startowy",
     "quiz": "Quiz"

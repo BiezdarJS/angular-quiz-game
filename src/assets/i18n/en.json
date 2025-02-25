@@ -1,4 +1,8 @@
 {
+  "welcome": {
+    "heading": "Welcome to the <br>movie quiz",
+    "start": "Start Quiz"
+  },
   "main_menu": {
     "start_view": "Start View",
     "quiz": "Quiz"
