@@ -1,4 +1,4 @@
-# GoalTrackerV2
+# QuizGame
 
 Angular CLI: 19.1.8<br />
 Node: 22.14.0<br />

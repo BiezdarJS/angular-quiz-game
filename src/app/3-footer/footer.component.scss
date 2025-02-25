@@ -7,4 +7,12 @@
   right: 0;
   top: 0;
   margin-bottom: 0;
+  display: flex;
+  padding: 25px 0 0;
+  a {
+    color: #000;
+    margin: 0 0 0 auto;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
 }
