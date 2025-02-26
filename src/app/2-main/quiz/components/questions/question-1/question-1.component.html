@@ -9,8 +9,8 @@
           'correct': isCompleted() && question.isCorrect,
           'incorrect': quizForm.get('question1')?.value === question.value && !question.isCorrect && idx === selectedIndex() && isCompleted()
           }"
-        >
-        <input type="radio" formControlName="question1" [value]="question.value" (change)="handleOptionChange(idx, question.value)">
+        (click)="handleOptionChange(idx, question.value)">
+        <input type="radio" formControlName="question1" [value]="question.value">
         {{ 'questions.q1.answers.' + ANSWER_KEYS[idx] | transloco }}
     </label>
     }
